@@ -16,21 +16,33 @@
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
+	<!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
+	<!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+
+	<script>
+		CookieAlert.init({
+			style: 'dark',
+			position: 'bottom',
+			opacity: '0.8',
+			displayTime: 0,
+			cookiePolicy: 'http://cookiealert.sruu.pl/o-ciasteczkach',
+			text: 'Ta strona wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień przeglądarki.'
+		});
+	</script>
+
 </head>
-
 <body>
-	<div class="container-fluid text-center">
 
-		<img src="img/frlogo.svg" alt="Liberte, Egalite, Fraternite" style="width: 200px; height: 120px; margin: 10px;">
+<div class="container-fluid text-center">
 
- <!--  <p> POMÓŻ FRANCUZOM OCALIĆ SWÓJ KRAJ </p> -->
-  <p> aider Français à sauver leur nation </p>
+	<img src="img/frlogo.svg" alt="Liberte, Egalite, Fraternite" style="width: 200px; height: 120px; margin: 10px;">
+ 
+  	<p> aidez à sauver votre langue </p>
 </div>
 
 <div class="tab-panels">
@@ -39,7 +51,7 @@
 			<li id="dropkat"> Kategorie </li> <!-- coś w rodzaju dropdowna -->
 		</ul>
 		<ul class="tabs">
-		 		<li rel="panel0" class="w3-text-cyan w3-hover-pink"> <strong> Strona główna </strong> </li>
+		 		<li rel="panel0" class="w3-text-cyan w3-hover-pink main"> <strong> Strona główna </strong> </li>
 		   	<li rel="panel1" class="w3-hover-cyan"> architektura </li>
 		    <li rel="panel2 " class="w3-hover-pink"> przyroda </li>
 				<li rel="panel3" class="w3-hover-cyan"> człowiek </li>
@@ -52,9 +64,9 @@
 	<div id="pkat" style="display:none;">
 
 		<ul id="zamknij">
-			<li><a href="verbes.html" > Czasowniki </a> </li>
-			<li><a href="adjectifs.html" > Przymiotniki </a> </li>
-			<li><a href="#" > Hellouuu </a> </li>
+			<li><a href="verbes.html" target="_blank" > Czasowniki </a> </li>
+			<li><a href="adjectifs.html" target="_blank" > Przymiotniki </a> </li>
+			<li><a href="#" > Test </a> </li>
 		</ul>
 
 
@@ -63,17 +75,31 @@
     </button>
 	</div>
 
-<!-- STRONA GŁÓWNA - POWSTANIE MAŁA GIERKA -->
-	<div id="panel0" class="panel">
-		<h2> <i> info o stronie </i> </h2>
-		<p>
-		Baza słówek, powstała podczas samodzielnej nauki francuskiego.
-		<br> Słówka zebrane z artykułów francuskiej prasy i tekstów piosenek.
-		<br>
-		</p>
 
-		<h2> mini-gra </h2>
+	<div id="panel0" class="panel ">
+		<div class="row">
+		
+			<div class="col-sm-4">
+				<h2 class="center"> <i> O stronie </i> </h2>
+				<p>
+				Baza słówek, powstała podczas nauki języka francuskiego.
+				<br> Słówka zebrane z artykułów francuskiej prasy i tekstów piosenek.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<p class="center" style="font-size: 17px;">
+				⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛⚛
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<h2 class="center"> <i> À propos du site </i></h2>
+				<p>
+				Une base de données de mots créée lors de l'apprentissage du français.
+				Des mots tirés d'articles de la presse française et de paroles de chansons.
+				</p>
+			</div>
 
+		</div>
 	</div>
 
 	<div class="container">
@@ -448,6 +474,29 @@
 
 
 	</div>
+</div>
+
+<div class="media">
+		<iframe id="ressource-embeded" width="430" height="520" src="http://enseigner.tv5monde.com/ressource-pedagogique/3504" frameborder="0">
+		</iframe>		
+</div>
+
+<div class="recap visibility">
+	<h4 class="center"> Kontakt </h4>
+	<p> <span class="glyphicon glyphicon-envelope"></span> &nbsp ig3dev@linux.pl
+	<br> &nbsp &nbsp <span class="glyphicon glyphicon-star-empty"></span> &nbsp <a href="http://www.ig3dev.pl" target="_blank"> ig3dev.pl </a>
+	</p>
+</div>
+
+<div class="dropdown">
+<div class="recap2 visibility">
+	<h4 class="center"> Donate </h4>
+	<p class="center"> <img src="img/btc.png" style="height: 50%; width: 50%;"> </p>
+		<div class="dropdown-content">
+			<img src="img/btc-transfer.png" style="height: 100%; width: 100%;">
+			<div class="desc"> BTC - donate adress </div>
+		</div>
+</div>
 </div>
 
 

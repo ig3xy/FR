@@ -4,6 +4,8 @@ $(function() {
 
 		var panelToShow = $(this).attr('rel');
 
+
+
 		$('.tab-panels .panel.active').hide(200, function(){
 			$(this).removeClass('active');
 
@@ -51,3 +53,19 @@ $(function(){
 
 
 
+
+$(function(){
+	$(".tab-panels .tabs li").on('click', function(){
+		$(".media").hide();
+		$(".recap").hide();
+		$(".recap2").hide();
+	});
+});
+
+$(function(){
+	$(".main").on('click', function(){
+		$(".media").show();
+		$(".recap").show();
+		$(".recap2").show();
+	});
+});
